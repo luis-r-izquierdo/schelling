@@ -50,6 +50,14 @@
          font-family: monospace
       }
    </style>
+   <STYLE type="text/css">
+      img {
+         max-width: 100%;
+         height: auto;
+         width: auto\9;
+         /* ie8 */
+      }
+   </STYLE>
 </head>
 
 
@@ -75,6 +83,7 @@ and Torrens 2004</a>).
    <p>
       In this appendix we analyse a computer implementation of Schelling's model based on Edmonds and Hales' (<a href="#edmonds2005">2005</a>). The spatial structure of the model is a 2-dimensional grid of 20&times;20 cells. There are 133 green agents and 133 red agents who are initially located on the grid at random. Agents may be happy or unhappy. Agents are unhappy if the proportion of other agents of its same colour in its Moore neighbourhood of radius 1 is below a certain critical threshold (which is a parameter of the model); otherwise the agent is said to be happy. In each iteration of the model one unhappy agent is randomly selected to move to a random empty cell in the lattice<sup> [<a href="#fn1">1</a>]</sup>. </p>
 
+   <img style="margin:0px auto;display:block" src="./segregation.png" alt="timeline" />
    <!--
    <p>Applet 1 below is a NetLogo (<a href="#wilensky1999">Wilensky 1999</a>) implementation of this model.</p>
 
